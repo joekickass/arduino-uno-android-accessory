@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="se.joekickass.android.toggleled"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-feature android:name="android.hardware.usb.accessory" />
+    <uses-sdk android:minSdkVersion="10" />
+    <application android:icon="@drawable/icon"
+    			 android:label="ToggleLedApplication">
+        <activity android:name=".ToggleLedActivity"
+                  android:label="ToggleLedApplication"
+                  android:launchMode="singleInstance">
+        	<intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+				android:resource="@xml/accessory_filter" />
+        </activity>
+		<uses-library android:name="com.android.future.usb.accessory" />
+    </application>
+</manifest>

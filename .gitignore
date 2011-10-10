@@ -1,0 +1,7 @@
+bin/
+gen/
+*.class
+*~
+.project
+.classpath
+build-cli/
