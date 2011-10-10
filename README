@@ -1,0 +1,16 @@
+Description:
+
+Example code for using the Arduino UNO as an Android Accessory.
+
+Hardware dependencies:
+* Arduino UNO
+* USB Host Shield 2.0 from Circuits@Home
+* Android device with at least version 2.3.4
+* Optional: A LED
+
+Software dependencies:
+* Eclipse for Java (or similar IDE for Android application development)
+* Google SDK
+* Google APIs Add-On version 10 (not needed if target device is 3.2 or greater)
+* Arduino core library (comes with the Arduino IDE)
+* USB Host shield library 2.0 from Circuits@Home
